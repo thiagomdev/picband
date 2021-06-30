@@ -1,0 +1,10 @@
+
+Showing All Messages
+WriteAuxiliaryFile /Users/thiagomonteiro/Library/Developer/Xcode/DerivedData/TapWiser-boxwbabmponeowbcexuwbgtdgoly/Build/Intermediates.noindex/Pods.build/QA-iphonesimulator/OptimizelySwiftSDK.build/Optimizely-all-non-framework-target-headers.hmap (in target 'OptimizelySwiftSDK' from project 'Pods')
+    cd /Users/thiagomonteiro/Repositories/tapwiser-ios/Pods
+    write-file /Users/thiagomonteiro/Library/Developer/Xcode/DerivedData/TapWiser-boxwbabmponeowbcexuwbgtdgoly/Build/Intermediates.noindex/Pods.build/QA-iphonesimulator/OptimizelySwiftSDK.build/Optimizely-all-non-framework-target-headers.hmap
+
+WriteAuxiliaryFile /Users/thiagomonteiro/Library/Developer/Xcode/DerivedData/TapWiser-boxwbabmponeowbcexuwbgtdgoly/Build/Intermediates.noindex/Pods.build/QA-iphonesimulator/OptimizelySwiftSDK.build/Optimizely-all-target-headers.hmap (in target 'OptimizelySwiftSDK' from project 'Pods')
+    cd /Users/thiagomonteiro/Repositories/tapwiser-ios/Pods
+    write-file /Users/thiagomonteiro/Library/Developer/Xcode/DerivedData/TapWiser-boxwbabmponeowbcexuwbgtdgoly/Build/Intermediates.noindex/Pods.build/QA-iphonesimulator/OptimizelySwiftSDK.build/Optimizely-all-target-headers.hmap
+
