@@ -12,19 +12,6 @@ protocol LoginScreenDelegate: AnyObject {
     func registerButton()
 }
 
-public enum Constants {
-    // MARK: Aspect Ratio
-    public static let categoryImageAspectRatio: CGFloat = 1
-    public static let productImageAspectRatio: CGFloat = 4 / 3
-    public static let brandHeaderAspectRatio: CGFloat = 16 / 6
-    // MARK: Sizes
-    public static let categoryImageHeight: CGFloat = 72
-    public static let brandHeaderWidth = CGFloat(brandHeaderAspectRatio * categoryImageHeight).rounded()
-    public static let listImageHeight: CGFloat = 92
-    public static let listImageWidth = CGFloat(productImageAspectRatio * listImageHeight).rounded()
-    public static let detailImageHeight: CGFloat = 246
-    public static let detailImageWidth = CGFloat(productImageAspectRatio * detailImageHeight).rounded()
-}
 
 class LoginScreen: UIView, CodeView {
     

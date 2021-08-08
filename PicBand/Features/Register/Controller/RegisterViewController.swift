@@ -6,13 +6,14 @@
 //
 
 import UIKit
+import Firebase
 
 class RegisterViewController: UIViewController {
 
     // MARK: - Properties
     var registerScreen: RegisterScreen?
     
-    
+    var auth: Auth?
     // MARK: - Super Methods
     override func loadView() {
         self.registerScreen = RegisterScreen()
@@ -24,8 +25,9 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.auth = Auth.auth()
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         self.navigationController?.navigationBar.prefersLargeTitles = false
@@ -33,11 +35,20 @@ class RegisterViewController: UIViewController {
 }
 
 extension RegisterViewController: RegisterScreenDelegate {
-    func dismiss() {
+    func registerButton() {
+
+        self.auth?.createUser(withEmail: self.registerScreen?.textFieldEmail.text ?? "", password: self.registerScreen?.textFieldPassword.text ?? "", completion: { result, error in
+            
+            if error != nil {
+                print("Usuário existente.")
+            } else {
+                print("Cadastro realizado com Sucesso.")
+            }
+        })
         dismiss(animated: true, completion: nil)
     }
     
-    
+
 }
 
 

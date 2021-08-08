@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27FA591F7A2E2AA104920503 /* Pods_PicBand.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 715162EFDFB1163EE3892C77 /* Pods_PicBand.framework */; };
+		8AF8F50526BF838900758FC4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AF8F50426BF838900758FC4 /* GoogleService-Info.plist */; };
 		AA17F39926850DB200D4862F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA17F39826850DB200D4862F /* AppDelegate.swift */; };
 		AA17F39B26850DB200D4862F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA17F39A26850DB200D4862F /* SceneDelegate.swift */; };
 		AA17F39D26850DB200D4862F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA17F39C26850DB200D4862F /* LoginViewController.swift */; };
@@ -27,6 +29,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B73E35515C69973EBF49681 /* Pods-PicBand.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicBand.debug.xcconfig"; path = "Target Support Files/Pods-PicBand/Pods-PicBand.debug.xcconfig"; sourceTree = "<group>"; };
+		5BB1AA923FE756BAF2EBD57C /* Pods-PicBand.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicBand.release.xcconfig"; path = "Target Support Files/Pods-PicBand/Pods-PicBand.release.xcconfig"; sourceTree = "<group>"; };
+		715162EFDFB1163EE3892C77 /* Pods_PicBand.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PicBand.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AF8F50426BF838900758FC4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AA17F39526850DB200D4862F /* PicBand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicBand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA17F39826850DB200D4862F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA17F39A26850DB200D4862F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27FA591F7A2E2AA104920503 /* Pods_PicBand.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +72,8 @@
 				AA17F3AC26850DEE00D4862F /* Resources */,
 				AA17F39726850DB200D4862F /* PicBand */,
 				AA17F39626850DB200D4862F /* Products */,
+				F72CE940DEAC9367AF3353B7 /* Pods */,
+				F374CA94FB41852592632861 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +93,7 @@
 				AA17F3B126850E6200D4862F /* Core */,
 				AA17F3A326850DB400D4862F /* LaunchScreen.storyboard */,
 				AA17F3A626850DB400D4862F /* Info.plist */,
+				8AF8F50426BF838900758FC4 /* GoogleService-Info.plist */,
 			);
 			path = PicBand;
 			sourceTree = "<group>";
@@ -308,6 +318,23 @@
 			path = HelpersProtocols;
 			sourceTree = "<group>";
 		};
+		F374CA94FB41852592632861 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				715162EFDFB1163EE3892C77 /* Pods_PicBand.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F72CE940DEAC9367AF3353B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B73E35515C69973EBF49681 /* Pods-PicBand.debug.xcconfig */,
+				5BB1AA923FE756BAF2EBD57C /* Pods-PicBand.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -315,9 +342,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA17F3A926850DB400D4862F /* Build configuration list for PBXNativeTarget "PicBand" */;
 			buildPhases = (
+				220C23C9D23FF035C74C3CBA /* [CP] Check Pods Manifest.lock */,
 				AA17F39126850DB200D4862F /* Sources */,
 				AA17F39226850DB200D4862F /* Frameworks */,
 				AA17F39326850DB200D4862F /* Resources */,
+				E670ADB0AD35061E16905E22 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -367,10 +396,53 @@
 			files = (
 				AA17F3A526850DB400D4862F /* LaunchScreen.storyboard in Resources */,
 				AA17F3A226850DB400D4862F /* Assets.xcassets in Resources */,
+				8AF8F50526BF838900758FC4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		220C23C9D23FF035C74C3CBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PicBand-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E670ADB0AD35061E16905E22 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PicBand/Pods-PicBand-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PicBand/Pods-PicBand-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PicBand/Pods-PicBand-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AA17F39126850DB200D4862F /* Sources */ = {
@@ -527,12 +599,14 @@
 		};
 		AA17F3AA26850DB400D4862F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B73E35515C69973EBF49681 /* Pods-PicBand.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C268D3L4YC;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PicBand/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -546,12 +620,14 @@
 		};
 		AA17F3AB26850DB400D4862F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BB1AA923FE756BAF2EBD57C /* Pods-PicBand.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C268D3L4YC;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PicBand/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

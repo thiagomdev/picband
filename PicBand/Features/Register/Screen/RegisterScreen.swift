@@ -8,7 +8,8 @@
 import UIKit
 
 protocol RegisterScreenDelegate: AnyObject {
-    func dismiss()
+    func registerButton()
+    
 }
 
 class RegisterScreen: UIView, CodeView {
@@ -61,22 +62,22 @@ class RegisterScreen: UIView, CodeView {
         tfPassword.borderStyle = .roundedRect
         return tfPassword
     }()
-    
-    lazy var textFieldConfirmPassword: UITextField = {
-        let tfConfiPassword = UITextField()
-        tfConfiPassword.translatesAutoresizingMaskIntoConstraints = false
-        tfConfiPassword.placeholder = "Confirm Password"
-        tfConfiPassword.textAlignment = .center
-        tfConfiPassword.font = UIFont.systemFont(ofSize: 14)
-        tfConfiPassword.keyboardType = .default
-        tfConfiPassword.borderStyle = .roundedRect
-        return tfConfiPassword
-    }()
+//
+//    lazy var textFieldConfirmPassword: UITextField = {
+//        let tfConfiPassword = UITextField()
+//        tfConfiPassword.translatesAutoresizingMaskIntoConstraints = false
+//        tfConfiPassword.placeholder = "Confirm Password"
+//        tfConfiPassword.textAlignment = .center
+//        tfConfiPassword.font = UIFont.systemFont(ofSize: 14)
+//        tfConfiPassword.keyboardType = .default
+//        tfConfiPassword.borderStyle = .roundedRect
+//        return tfConfiPassword
+//    }()
     
     lazy var registerButton: UIButton = {
         let register = UIButton()
         register.translatesAutoresizingMaskIntoConstraints = false
-        register.setTitle("Sign up", for: .normal)
+        register.setTitle("Register", for: .normal)
         register.setTitleColor(.white, for: .normal)
         register.backgroundColor = .clear
         register.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
@@ -87,7 +88,7 @@ class RegisterScreen: UIView, CodeView {
     }()
     
     @objc func registerDismiss() {
-        self.delegate?.dismiss()
+        self.delegate?.registerButton()
     }
     
     // MARK: - Super Methods
@@ -101,7 +102,7 @@ class RegisterScreen: UIView, CodeView {
         self.addSubview(bgImage)
         self.addSubview(textFieldEmail)
         self.addSubview(textFieldPassword)
-        self.addSubview(textFieldConfirmPassword)
+//        self.addSubview(textFieldConfirmPassword)
         self.addSubview(registerButton)
         self.addSubview(logoImageView)
         
@@ -124,16 +125,16 @@ class RegisterScreen: UIView, CodeView {
         
         
         // MARK: - Constraint Text Field Confirm Password
-        textFieldConfirmPassword
-            .topToBottom(of: textFieldPassword, margin: Constant.margin)
-            .leadingToSuperview(Constant.leading, toSafeArea: true)
-            .trailingToSuperview(Constant.trailing, toSafeArea: true)
-        
-        
+//        textFieldConfirmPassword
+//            .topToBottom(of: textFieldPassword, margin: Constant.margin)
+//            .leadingToSuperview(Constant.leading, toSafeArea: true)
+//            .trailingToSuperview(Constant.trailing, toSafeArea: true)
+//
+//
         // MARK: - Constraints Register Button
         registerButton
-            .topToBottom(of: textFieldConfirmPassword, margin: Constant.margin)
-            .centerHorizontal(to: textFieldConfirmPassword)
+            .topToBottom(of: textFieldPassword, margin: Constant.margin)
+            .centerHorizontal(to: textFieldPassword)
         
         
         // MARK: - Constraints Logo Image View

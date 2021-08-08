@@ -168,62 +168,77 @@ class CategoriesScreen: UIView, CodeView {
     }
     
     func setupConstraints() {
-        NSLayoutConstraint.activate([
-            
-            // MARK: - Constraints Stack View Musician
-            self.stackViewCustom.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 60),
-            self.stackViewCustom.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
-            self.stackViewCustom.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor, constant: 30),
-            self.stackViewCustom.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor, constant: -30),
-            self.stackViewCustom.heightAnchor.constraint(equalToConstant: 200),
-            
-            
-            // MARK: - Constraints Stack View Bands
-            self.stackViewCustomBands.topAnchor.constraint(equalTo: self.stackViewCustom.bottomAnchor, constant: 30),
-            self.stackViewCustomBands.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
-            self.stackViewCustomBands.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor, constant: 30),
-            self.stackViewCustomBands.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor, constant: -30),
-            self.stackViewCustomBands.heightAnchor.constraint(equalToConstant: 200),
-            
-            // MARK: - constraints Label Title
-            self.labelTitle.topAnchor.constraint(equalTo: self.stackViewCustom.topAnchor, constant: 30),
-            self.labelTitle.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-            
-            // MARK: - Constraints Label Subtitle
-            self.labelSubtitle.topAnchor.constraint(equalTo: self.labelTitle.topAnchor, constant: 38),
-            self.labelSubtitle.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-            self.labelSubtitle.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 40),
-            self.labelSubtitle.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -40),
-            
-            // MARK: - Constraints Musician Button
-            self.pickMusicianButton.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-            self.pickMusicianButton.topAnchor.constraint(equalTo: self.labelSubtitle.bottomAnchor, constant: 20),
-            
-            // MARK: - constraints Label Title
-            self.labelTitleBand.topAnchor.constraint(equalTo: self.stackViewCustomBands.topAnchor, constant: 30),
-            self.labelTitleBand.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-            
-            // MARK: - Constraints Label Subtitle
-            self.labelSubtitleBand.topAnchor.constraint(equalTo: self.labelTitleBand.topAnchor, constant: 38),
-            self.labelSubtitleBand.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-            self.labelSubtitleBand.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 40),
-            self.labelSubtitleBand.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -40),
-            
-            // MARK: - Constraints Band Button
-            self.pickBandButton.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-            self.pickBandButton.topAnchor.constraint(equalTo: self.labelSubtitleBand.bottomAnchor, constant: 20),
-            
-            // MARK: - Constraints Back Button
-            self.backButton.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 20),
-            self.backButton.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
-            
-            // MARK: - Constraints About Us label
-            self.labelAboutPickBand.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
-            self.labelAboutPickBand.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -32),
-            self.labelAboutPickBand.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
-            self.labelAboutPickBand.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20)
-            
-        ])
+        
+        // MARK: - Constraints Stack View Musician
+        stackViewCustom
+            .topToSuperview(60, toSafeArea: true)
+            .centerHorizontal(to: self)
+            .leadingToLeading(of: self, margin: 30)
+            .trailingToTrailing(of: self, margin: 30)
+            .heightTo(200)
+        
+        
+        // MARK: - Constraints Stack View Bands
+        stackViewCustomBands
+            .topToBottom(of: stackViewCustom, margin: 30)
+            .centerHorizontal(to: self)
+            .leadingToLeading(of: self, margin: 30)
+            .trailingToTrailing(of: self, margin: 30)
+            .heightTo(200)
+        
+        
+        // MARK: - constraints Label Title
+        labelTitle
+            .topToTop(of: stackViewCustom, margin: 30)
+            .centerHorizontal(to: self)
+        
+        
+        // MARK: - Constraints Label Subtitle
+        labelSubtitle
+            .topToTop(of: labelTitle, margin: 38)
+            .centerHorizontal(to: self)
+            .leadingToLeading(of: self, margin: 40)
+            .trailingToTrailing(of: self, margin: 40)
+        
+    
+        // MARK: - Constraints Musician Button
+        pickMusicianButton
+            .centerHorizontal(to: self)
+            .topToBottom(of: labelSubtitle, margin: 20)
+        
+        
+        // MARK: - constraints Label Title
+        labelTitleBand
+            .topToTop(of: stackViewCustomBands, margin: 30)
+            .centerHorizontal(to: self)
+        
+    
+        // MARK: - Constraints Label Subtitle
+        labelSubtitleBand
+            .centerHorizontal(to: self)
+            .topToTop(of: labelTitleBand, margin: 38)
+            .leadingToLeading(of: self, margin: 40)
+            .trailingToTrailing(of: self, margin: 40)
+        
+        
+        // MARK: - Constraints Band Button
+        pickBandButton
+            .centerHorizontal(to: self)
+            .topToBottom(of: labelSubtitleBand, margin: 20)
+        
+        // MARK: - Constraints Back Button
+        backButton
+            .topToSuperview(20, toSafeArea: true)
+            .leadingToLeading(of: self, margin: 20)
+        
+        
+        // MARK: - Constraints About Us Pick Band
+        labelAboutPickBand
+            .trailingToTrailing(of: self, margin: 20)
+            .bottomToBottom(of: self, margin: 32)
+            .leadingToLeading(of: self, margin: 20)
+            .trailingToTrailing(of: self, margin: 20)
+  
     }
     
     func extraSetupConfiguration() {

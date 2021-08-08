@@ -56,12 +56,12 @@ extension LoginViewController: UITextFieldDelegate {
         
         self.loginScreen?.loginButton.setTitleColor(.lightGray, for: .normal)
         self.loginScreen?.loginButton.isEnabled = false
-        
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         
         switch textField {
+        
         case self.loginScreen?.textFieldEmail:
             self.loginScreen?.emailIsEmpty()
         case self.loginScreen?.textFieldPassword:
@@ -77,7 +77,6 @@ extension LoginViewController: UITextFieldDelegate {
         return true
     }
 }
-
 
 extension LoginViewController: LoginScreenDelegate {
     func loginButton() {
