@@ -59,6 +59,7 @@ class RegisterScreen: UIView, CodeView {
         tfPassword.textAlignment = .center
         tfPassword.font = UIFont.systemFont(ofSize: 14)
         tfPassword.keyboardType = .default
+        tfPassword.isSecureTextEntry = true
         tfPassword.borderStyle = .roundedRect
         return tfPassword
     }()
