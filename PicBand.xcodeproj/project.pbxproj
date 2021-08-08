@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		27FA591F7A2E2AA104920503 /* Pods_PicBand.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 715162EFDFB1163EE3892C77 /* Pods_PicBand.framework */; };
+		8A66063E26C0771600CC9EA4 /* ExtensionRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A66063D26C0771600CC9EA4 /* ExtensionRegisterViewController.swift */; };
 		8AF8F50526BF838900758FC4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AF8F50426BF838900758FC4 /* GoogleService-Info.plist */; };
 		AA17F39926850DB200D4862F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA17F39826850DB200D4862F /* AppDelegate.swift */; };
 		AA17F39B26850DB200D4862F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA17F39A26850DB200D4862F /* SceneDelegate.swift */; };
@@ -32,6 +33,7 @@
 		4B73E35515C69973EBF49681 /* Pods-PicBand.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicBand.debug.xcconfig"; path = "Target Support Files/Pods-PicBand/Pods-PicBand.debug.xcconfig"; sourceTree = "<group>"; };
 		5BB1AA923FE756BAF2EBD57C /* Pods-PicBand.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicBand.release.xcconfig"; path = "Target Support Files/Pods-PicBand/Pods-PicBand.release.xcconfig"; sourceTree = "<group>"; };
 		715162EFDFB1163EE3892C77 /* Pods_PicBand.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PicBand.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A66063D26C0771600CC9EA4 /* ExtensionRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionRegisterViewController.swift; sourceTree = "<group>"; };
 		8AF8F50426BF838900758FC4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AA17F39526850DB200D4862F /* PicBand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicBand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA17F39826850DB200D4862F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 		AA17F3BD268530DB00D4862F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				8A66063D26C0771600CC9EA4 /* ExtensionRegisterViewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -450,6 +453,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA17F39D26850DB200D4862F /* LoginViewController.swift in Sources */,
+				8A66063E26C0771600CC9EA4 /* ExtensionRegisterViewController.swift in Sources */,
 				AA4DFC3E2689254500C83F76 /* DetailMusicianViewController.swift in Sources */,
 				AA17F39926850DB200D4862F /* AppDelegate.swift in Sources */,
 				AA17F3C9268760AB00D4862F /* CategoriesViewController.swift in Sources */,
