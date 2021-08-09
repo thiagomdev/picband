@@ -87,6 +87,14 @@ class LoginScreen: UIView, CodeView {
         self.delegate?.loginButton()
     }
     
+    public func getEmail() -> String {
+        return self.textFieldEmail.text ?? ""
+    }
+    
+    public func getPassword() -> String {
+        return self.textFieldPassword.text ?? ""
+    }
+    
     lazy var registerButton: UIButton = {
         let registerButton = UIButton()
         registerButton.translatesAutoresizingMaskIntoConstraints = false

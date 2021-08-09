@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		27FA591F7A2E2AA104920503 /* Pods_PicBand.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 715162EFDFB1163EE3892C77 /* Pods_PicBand.framework */; };
 		8A66063E26C0771600CC9EA4 /* ExtensionRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A66063D26C0771600CC9EA4 /* ExtensionRegisterViewController.swift */; };
+		8A66064026C0C8DE00CC9EA4 /* ExtensionLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A66063F26C0C8DE00CC9EA4 /* ExtensionLoginViewController.swift */; };
+		8A66064226C0C96E00CC9EA4 /* ExyensionCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A66064126C0C96E00CC9EA4 /* ExyensionCategoryViewController.swift */; };
 		8AF8F50526BF838900758FC4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AF8F50426BF838900758FC4 /* GoogleService-Info.plist */; };
 		AA17F39926850DB200D4862F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA17F39826850DB200D4862F /* AppDelegate.swift */; };
 		AA17F39B26850DB200D4862F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA17F39A26850DB200D4862F /* SceneDelegate.swift */; };
@@ -34,6 +36,8 @@
 		5BB1AA923FE756BAF2EBD57C /* Pods-PicBand.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicBand.release.xcconfig"; path = "Target Support Files/Pods-PicBand/Pods-PicBand.release.xcconfig"; sourceTree = "<group>"; };
 		715162EFDFB1163EE3892C77 /* Pods_PicBand.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PicBand.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A66063D26C0771600CC9EA4 /* ExtensionRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionRegisterViewController.swift; sourceTree = "<group>"; };
+		8A66063F26C0C8DE00CC9EA4 /* ExtensionLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionLoginViewController.swift; sourceTree = "<group>"; };
+		8A66064126C0C96E00CC9EA4 /* ExyensionCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExyensionCategoryViewController.swift; sourceTree = "<group>"; };
 		8AF8F50426BF838900758FC4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AA17F39526850DB200D4862F /* PicBand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicBand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA17F39826850DB200D4862F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -159,6 +163,7 @@
 		AA17F3B226850E7000D4862F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				8A66063F26C0C8DE00CC9EA4 /* ExtensionLoginViewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -226,6 +231,7 @@
 		AA17F3C52687607300D4862F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				8A66064126C0C96E00CC9EA4 /* ExyensionCategoryViewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -459,6 +465,7 @@
 				AA17F3C9268760AB00D4862F /* CategoriesViewController.swift in Sources */,
 				AA17F39B26850DB200D4862F /* SceneDelegate.swift in Sources */,
 				AA17F3C12685311F00D4862F /* RegisterScreen.swift in Sources */,
+				8A66064226C0C96E00CC9EA4 /* ExyensionCategoryViewController.swift in Sources */,
 				AA17F3BF268530FA00D4862F /* RegisterViewController.swift in Sources */,
 				AA17F3B426850E8800D4862F /* CodeView.swift in Sources */,
 				AAECFB5A268CB0D900DBC2A1 /* Constraints.swift in Sources */,
@@ -468,6 +475,7 @@
 				AA17F3C72687609800D4862F /* CategoriesScreen.swift in Sources */,
 				AA4DFC372688CAD400C83F76 /* DetailBandViewController.swift in Sources */,
 				AAECFB5E268CE92C00DBC2A1 /* HelperProtocol.swift in Sources */,
+				8A66064026C0C8DE00CC9EA4 /* ExtensionLoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

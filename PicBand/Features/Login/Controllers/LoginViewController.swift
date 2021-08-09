@@ -6,12 +6,13 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController {
     
     // MARK: - Properties
     var loginScreen: LoginScreen?
-    
+    var auth: Auth?
     
     // MARK: - Super Methods
     override func loadView() {
@@ -25,13 +26,13 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.auth = Auth.auth()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         self.navigationController?.navigationBar.prefersLargeTitles = true
     }
-    
     
     func validateTextField() {
         let password: String = self.loginScreen?.textFieldPassword.text ?? ""
@@ -59,16 +60,13 @@ extension LoginViewController: UITextFieldDelegate {
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        
         switch textField {
-        
-        case self.loginScreen?.textFieldEmail:
-            self.loginScreen?.emailIsEmpty()
-        case self.loginScreen?.textFieldPassword:
-            self.loginScreen?.passwordIsEmpty()
-            self.validateTextField()
-        default:break
-            
+            case self.loginScreen?.textFieldEmail:
+                self.loginScreen?.emailIsEmpty()
+            case self.loginScreen?.textFieldPassword:
+                self.loginScreen?.passwordIsEmpty()
+                self.validateTextField()
+            default:break
         }
     }
     
@@ -78,16 +76,4 @@ extension LoginViewController: UITextFieldDelegate {
     }
 }
 
-extension LoginViewController: LoginScreenDelegate {
-    func loginButton() {
-        let login = CategoriesViewController()
-        self.navigationController?.pushViewController(login, animated: true)
-    }
-    
-    func registerButton() {
-        let register = RegisterViewController()
-        self.present(register, animated: true, completion: nil)
-    }
-    
-}
 

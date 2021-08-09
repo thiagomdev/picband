@@ -63,17 +63,6 @@ class RegisterScreen: UIView, CodeView {
         tfPassword.borderStyle = .roundedRect
         return tfPassword
     }()
-//
-//    lazy var textFieldConfirmPassword: UITextField = {
-//        let tfConfiPassword = UITextField()
-//        tfConfiPassword.translatesAutoresizingMaskIntoConstraints = false
-//        tfConfiPassword.placeholder = "Confirm Password"
-//        tfConfiPassword.textAlignment = .center
-//        tfConfiPassword.font = UIFont.systemFont(ofSize: 14)
-//        tfConfiPassword.keyboardType = .default
-//        tfConfiPassword.borderStyle = .roundedRect
-//        return tfConfiPassword
-//    }()
     
     lazy var registerButton: UIButton = {
         let register = UIButton()
@@ -92,6 +81,14 @@ class RegisterScreen: UIView, CodeView {
         self.delegate?.registerButton()
     }
     
+    public func getEmail() -> String {
+        return self.textFieldEmail.text ?? ""
+    }
+    
+    
+    public func getPassword() -> String {
+        return self.textFieldPassword.text ?? ""
+    }
     // MARK: - Super Methods
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -125,13 +122,6 @@ class RegisterScreen: UIView, CodeView {
             .trailingToSuperview(Constant.trailing, toSafeArea: true)
         
         
-        // MARK: - Constraint Text Field Confirm Password
-//        textFieldConfirmPassword
-//            .topToBottom(of: textFieldPassword, margin: Constant.margin)
-//            .leadingToSuperview(Constant.leading, toSafeArea: true)
-//            .trailingToSuperview(Constant.trailing, toSafeArea: true)
-//
-//
         // MARK: - Constraints Register Button
         registerButton
             .topToBottom(of: textFieldPassword, margin: Constant.margin)

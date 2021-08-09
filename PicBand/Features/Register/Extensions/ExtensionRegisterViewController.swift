@@ -9,9 +9,11 @@ import UIKit
 import Firebase
 
 extension RegisterViewController: RegisterScreenDelegate {
-    
     func registerButton() {
-        self.auth?.createUser(withEmail: self.registerScreen?.textFieldEmail.text ?? "", password: self.registerScreen?.textFieldPassword.text ?? "", completion: { result, error in
+        
+        guard let register = self.registerScreen else { return }
+        
+        self.auth?.createUser(withEmail: register.getEmail(), password: register.getPassword(), completion: { result, error in
             
             let alert = UIAlertController(title: "Alert!", message: "Usuário Existente.", preferredStyle: .alert)
             
