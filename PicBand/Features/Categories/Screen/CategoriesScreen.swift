@@ -21,7 +21,7 @@ class CategoriesScreen: UIView, CodeView {
     
     // MARK: - Elements
     lazy var stackViewCustom: UIStackView = {
-        let stack = UIStackView()
+        let stack = UIStackView(frame: .zero)
         stack.translatesAutoresizingMaskIntoConstraints = false
         stack.spacing = 10
         stack.axis = .vertical
@@ -33,7 +33,7 @@ class CategoriesScreen: UIView, CodeView {
     }()
     
     lazy var stackViewCustomBands: UIStackView = {
-        let stack = UIStackView()
+        let stack = UIStackView(frame: .zero)
         stack.translatesAutoresizingMaskIntoConstraints = false
         stack.spacing = 10
         stack.axis = .vertical
@@ -45,7 +45,7 @@ class CategoriesScreen: UIView, CodeView {
     }()
     
     lazy var labelTitle: UILabel = {
-        let lbTitle = UILabel()
+        let lbTitle = UILabel(frame: .zero)
         lbTitle.translatesAutoresizingMaskIntoConstraints = false
         lbTitle.text = "PICK YOUR MUSICIAN"
         lbTitle.textAlignment = .center
@@ -56,7 +56,7 @@ class CategoriesScreen: UIView, CodeView {
     }()
     
     lazy var labelSubtitle: UILabel = {
-        let lbSubtitle = UILabel()
+        let lbSubtitle = UILabel(frame: .zero)
         lbSubtitle.translatesAutoresizingMaskIntoConstraints = false
         lbSubtitle.text = "You can find here, a professional Musician to your best show! We're going to help you. Enjoy It."
         lbSubtitle.textAlignment = .center
@@ -67,7 +67,7 @@ class CategoriesScreen: UIView, CodeView {
     }()
     
     lazy var labelTitleBand: UILabel = {
-        let lbTitle = UILabel()
+        let lbTitle = UILabel(frame: .zero)
         lbTitle.translatesAutoresizingMaskIntoConstraints = false
         lbTitle.text = "PICK YOUR BAND"
         lbTitle.textAlignment = .center
@@ -78,7 +78,7 @@ class CategoriesScreen: UIView, CodeView {
     }()
     
     lazy var labelSubtitleBand: UILabel = {
-        let lbSubtitle = UILabel()
+        let lbSubtitle = UILabel(frame: .zero)
         lbSubtitle.translatesAutoresizingMaskIntoConstraints = false
         lbSubtitle.text = "You can find here, a professional Band to your best show! We're going to help you. Enjoy It."
         lbSubtitle.textAlignment = .center
@@ -89,7 +89,7 @@ class CategoriesScreen: UIView, CodeView {
     }()
     
     lazy var labelAboutPickBand: UILabel = {
-        let lbAbout = UILabel()
+        let lbAbout = UILabel(frame: .zero)
         lbAbout.translatesAutoresizingMaskIntoConstraints = false
         lbAbout.text = "About the Pick Band. We're here to help you with all decisions you want  to do. Chose the Best Musician or Band. Enjoy it."
         lbAbout.textAlignment = .center
@@ -100,7 +100,7 @@ class CategoriesScreen: UIView, CodeView {
     }()
     
     lazy var pickBandButton: UIButton = {
-        let pickBand = UIButton()
+        let pickBand = UIButton(frame: .zero)
         pickBand.translatesAutoresizingMaskIntoConstraints = false
         pickBand.setTitle("Bands", for: .normal)
         pickBand.setTitleColor(.blue, for: .normal)
@@ -116,7 +116,7 @@ class CategoriesScreen: UIView, CodeView {
     }
     
     lazy var pickMusicianButton: UIButton = {
-        let pickMusician = UIButton()
+        let pickMusician = UIButton(frame: .zero)
         pickMusician.translatesAutoresizingMaskIntoConstraints = false
         pickMusician.setTitle("Musician", for: .normal)
         pickMusician.setTitleColor(.blue, for: .normal)
@@ -132,7 +132,7 @@ class CategoriesScreen: UIView, CodeView {
     }
     
     lazy var backButton: UIButton = {
-        let back = UIButton()
+        let back = UIButton(frame: .zero)
         back.translatesAutoresizingMaskIntoConstraints = false
         back.setImage(UIImage(systemName: "chevron.backward"), for: .normal)
         back.setTitleColor(.white, for: .normal)

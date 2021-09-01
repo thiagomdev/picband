@@ -20,7 +20,7 @@ class RegisterScreen: UIView, CodeView {
     
     // MARK: - Elements
     lazy var bgImage: UIImageView = {
-        let img = UIImageView()
+        let img = UIImageView(frame: .zero)
         img.translatesAutoresizingMaskIntoConstraints = false
         img.image = UIImage(imageLiteralResourceName: "img")
         img.contentMode = .scaleAspectFill
@@ -29,7 +29,7 @@ class RegisterScreen: UIView, CodeView {
     }()
     
     lazy var logoImageView: UIImageView = {
-        let imgLogo = UIImageView()
+        let imgLogo = UIImageView(frame: .zero)
         imgLogo.translatesAutoresizingMaskIntoConstraints = false
         imgLogo.image = UIImage(systemName: "tv.music.note")
         imgLogo.contentMode = .scaleAspectFit
@@ -42,7 +42,7 @@ class RegisterScreen: UIView, CodeView {
     }()
     
     lazy var textFieldEmail: UITextField = {
-        let tfEmail = UITextField()
+        let tfEmail = UITextField(frame: .zero)
         tfEmail.translatesAutoresizingMaskIntoConstraints = false
         tfEmail.placeholder = "Email"
         tfEmail.textAlignment = .center
@@ -53,7 +53,7 @@ class RegisterScreen: UIView, CodeView {
     }()
     
     lazy var textFieldPassword: UITextField = {
-        let tfPassword = UITextField()
+        let tfPassword = UITextField(frame: .zero)
         tfPassword.translatesAutoresizingMaskIntoConstraints = false
         tfPassword.placeholder = "Password"
         tfPassword.textAlignment = .center
@@ -65,7 +65,7 @@ class RegisterScreen: UIView, CodeView {
     }()
     
     lazy var registerButton: UIButton = {
-        let register = UIButton()
+        let register = UIButton(frame: .zero)
         register.translatesAutoresizingMaskIntoConstraints = false
         register.setTitle("Register", for: .normal)
         register.setTitleColor(.white, for: .normal)

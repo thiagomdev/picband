@@ -8,5 +8,5 @@ target 'PicBand' do
   # Pods for PicBand
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
-
+pod 'Alamofire', '~> 5.2'
 end

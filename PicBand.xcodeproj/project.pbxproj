@@ -11,6 +11,7 @@
 		8A66063E26C0771600CC9EA4 /* ExtensionRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A66063D26C0771600CC9EA4 /* ExtensionRegisterViewController.swift */; };
 		8A66064026C0C8DE00CC9EA4 /* ExtensionLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A66063F26C0C8DE00CC9EA4 /* ExtensionLoginViewController.swift */; };
 		8A66064226C0C96E00CC9EA4 /* ExyensionCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A66064126C0C96E00CC9EA4 /* ExyensionCategoryViewController.swift */; };
+		8AA18A0826C5EDE4002B192D /* MusicianAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA18A0726C5EDE4002B192D /* MusicianAPI.swift */; };
 		8AF8F50526BF838900758FC4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AF8F50426BF838900758FC4 /* GoogleService-Info.plist */; };
 		AA17F39926850DB200D4862F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA17F39826850DB200D4862F /* AppDelegate.swift */; };
 		AA17F39B26850DB200D4862F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA17F39A26850DB200D4862F /* SceneDelegate.swift */; };
@@ -38,6 +39,7 @@
 		8A66063D26C0771600CC9EA4 /* ExtensionRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionRegisterViewController.swift; sourceTree = "<group>"; };
 		8A66063F26C0C8DE00CC9EA4 /* ExtensionLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionLoginViewController.swift; sourceTree = "<group>"; };
 		8A66064126C0C96E00CC9EA4 /* ExyensionCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExyensionCategoryViewController.swift; sourceTree = "<group>"; };
+		8AA18A0726C5EDE4002B192D /* MusicianAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicianAPI.swift; sourceTree = "<group>"; };
 		8AF8F50426BF838900758FC4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AA17F39526850DB200D4862F /* PicBand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicBand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA17F39826850DB200D4862F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8AA18A0626C5EDC1002B192D /* MusicianAPI */ = {
+			isa = PBXGroup;
+			children = (
+				8AA18A0726C5EDE4002B192D /* MusicianAPI.swift */,
+			);
+			path = MusicianAPI;
+			sourceTree = "<group>";
+		};
 		AA17F38C26850DB200D4862F = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +139,7 @@
 		AA17F3AE26850E0F00D4862F /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				8AA18A0626C5EDC1002B192D /* MusicianAPI */,
 				AA17F3AF26850E2E00D4862F /* Screen */,
 				AA17F3B026850E3800D4862F /* Controllers */,
 				AA17F3B226850E7000D4862F /* Extensions */,
@@ -459,6 +470,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA17F39D26850DB200D4862F /* LoginViewController.swift in Sources */,
+				8AA18A0826C5EDE4002B192D /* MusicianAPI.swift in Sources */,
 				8A66063E26C0771600CC9EA4 /* ExtensionRegisterViewController.swift in Sources */,
 				AA4DFC3E2689254500C83F76 /* DetailMusicianViewController.swift in Sources */,
 				AA17F39926850DB200D4862F /* AppDelegate.swift in Sources */,

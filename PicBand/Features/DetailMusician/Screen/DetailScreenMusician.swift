@@ -22,7 +22,7 @@ class DetailScreenMusician: UIView, CodeView {
     }()
     
     lazy var stackViewCustomGreen: UIStackView = {
-        let stack = UIStackView()
+        let stack = UIStackView(frame: .zero)
         stack.translatesAutoresizingMaskIntoConstraints = false
         stack.spacing = 10
         stack.axis = .vertical
@@ -32,7 +32,7 @@ class DetailScreenMusician: UIView, CodeView {
     }()
     
     lazy var stackViewCustomOrange: UIStackView = {
-        let stack = UIStackView()
+        let stack = UIStackView(frame: .zero)
         stack.translatesAutoresizingMaskIntoConstraints = false
         stack.spacing = 10
         stack.axis = .vertical

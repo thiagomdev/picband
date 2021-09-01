@@ -21,7 +21,7 @@ class LoginScreen: UIView, CodeView {
     
     // MARK: - Elements
     lazy var logoImageView: UIImageView = {
-        let imgLogo = UIImageView()
+        let imgLogo = UIImageView(frame: .zero)
         imgLogo.translatesAutoresizingMaskIntoConstraints = false
         imgLogo.image = UIImage(systemName: "tv.music.note")
         imgLogo.contentMode = .scaleAspectFit
@@ -34,7 +34,7 @@ class LoginScreen: UIView, CodeView {
     }()
     
     lazy var bgImage: UIImageView = {
-        let img = UIImageView()
+        let img = UIImageView(frame: .zero)
         img.translatesAutoresizingMaskIntoConstraints = false
         img.image = UIImage(imageLiteralResourceName: "img")
         img.contentMode = .scaleAspectFill
@@ -43,7 +43,7 @@ class LoginScreen: UIView, CodeView {
     }()
     
     lazy var textFieldEmail: UITextField = {
-        let tfEmail = UITextField()
+        let tfEmail = UITextField(frame: .zero)
         tfEmail.translatesAutoresizingMaskIntoConstraints = false
         tfEmail.placeholder = "E-mail"
         tfEmail.textAlignment = .center
@@ -57,7 +57,7 @@ class LoginScreen: UIView, CodeView {
     }()
     
     lazy var textFieldPassword: UITextField = {
-        let tfPassword = UITextField()
+        let tfPassword = UITextField(frame: .zero)
         tfPassword.translatesAutoresizingMaskIntoConstraints = false
         tfPassword.placeholder = "Password"
         tfPassword.textAlignment = .center
@@ -72,7 +72,7 @@ class LoginScreen: UIView, CodeView {
     }()
     
     lazy var loginButton: UIButton = {
-        let lgButton = UIButton()
+        let lgButton = UIButton(frame: .zero)
         lgButton.translatesAutoresizingMaskIntoConstraints = false
         lgButton.setTitle("Sign In", for: .normal)
         lgButton.setTitleColor(.lightGray, for: .normal)
@@ -96,7 +96,7 @@ class LoginScreen: UIView, CodeView {
     }
     
     lazy var registerButton: UIButton = {
-        let registerButton = UIButton()
+        let registerButton = UIButton(frame: .zero)
         registerButton.translatesAutoresizingMaskIntoConstraints = false
         registerButton.setTitle("Ready for Register?", for: .normal)
         registerButton.setTitleColor(.systemIndigo, for: .normal)
